@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en-US" class="css3transitions">
+<head>
+    <meta charset="UTF-8">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <link rel="icon" type="image/svg" href="img/nandalala.svg">
+    <title></title>
+    <!-- All CSS -->
+    <!-- All CSS -->
+    <link rel='stylesheet' href='style.css' type='text/css' media='all' />
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <link href="index.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- Include Font Awesome (if not already included) -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <!-- Bootstrap Icons CDN Link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.18.0/font/bootstrap-icons.css" rel="stylesheet">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        integrity="sha384-DNOHZ68v3ZP5sR2KUYtFyRx6pi6j2k3br+vu4SMVKwlf6R5xg1hVXRN3t8lCAx1v" crossorigin="anonymous">
+</head>
+<style>
+    .banner-container {
+        height: 300px; /* Set desired height for the banner */
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .slider {
+            width: 100%;
+            max-width: 800px;
+            margin: 0 auto;
+            overflow: hidden;
+            position: relative;
+        }
+        .slides {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+        }
+        .slide {
+            min-width: 100%;
+            overflow: hidden;
+        }
+        img {
+            width: 100%;
+            height: auto;
+        }
+        .prev, .next {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            padding: 10px;
+            background-color: rgba(255, 255, 255, 0.5);
+            cursor: pointer;
+        }
+        .img-thumbnail{
+            width: 80%;
+            height: 80%;
+        }
+        .center {
+            text-align: center; /* Center text within the container */
+        }
+        .center ol {
+            text-align: left; /* Align list items to the left */
+            padding-left: 0; /* Remove default left padding for the list */
+        }
+        .center-text {
+            text-align: center; /* Center text horizontally */
+        }
+        .center-content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+        }
+        .img-wrapper img {
+            max-width: 100%; /* Ensure image does not exceed its parent's width */
+            height: auto; /* Maintain aspect ratio of the image */
+        }
+        .centered-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: justify;
+    font-size: 23px;
+}
+.centered-list ul {
+    list-style-position: inside;
+}
+.core{
+    font-size: 32px;
+    font-weight: 400;
+}
+        @media (min-width: 768px) {
+            .img-wrapper img {
+                max-width: 50%; /* Set max-width to 50% on medium and larger screens */
+            }
+        }
+        .card {
+            border: none; /* Remove all borders */
+            border-radius: 0; /* Optional: Remove border radius */
+            box-shadow: none; /* Optional: Remove box shadow */
+        }
+        .img-fluid {
+            max-width: 90%; /* Ensure images are responsive */
+            height: auto; /* Maintain aspect ratio */
+        }
+        .center-text {
+            text-align: center; /* Center-align the text */
+            font-size: 18px; /* Set the font size */
+        }
+        .center-content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center; /* Center-align the text within flex container */
+        }
+</style>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light  fixed-top" style="background-color: rgb(228, 233, 242)">
+        <div class="container-fluid">
+            <a class="navbar-brand img11" href="#"><img class="img112" src="assets/img/nandalala.svg" alt=""
+                    width="100%"></a>
+            <!-- Navbar Toggler Button -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Navbar Links -->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about_us_2.html">About</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Services
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
+                            <li><a class="dropdown-item" href="services.html">Software Development</a></li>
+                            <li><a class="dropdown-item" href="web-application.html">Web Development</a></li>
+                            <li><a class="dropdown-item" href="mobile-developing.html">Mobile Development</a></li>
+                            <li><a class="dropdown-item" href="develps.html">DevOps Automation</a></li>
+                            <li><a class="dropdown-item" href="cloud.html">Cloud Consulting</a></li>
+                            <li><a class="dropdown-item" href="quanty .html">Quality Assurance</a></li>
+                            <li><a class="dropdown-item" href="others.html">Other Services</a></li>
+                            <li><a class="dropdown-item" href="technology.html">Technology Stack</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="productsDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Products
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="productsDropdown">
+                            <li><a class="dropdown-item" href="lala-erp.html">Lala ERP</a></li>
+                            <li><a class="dropdown-item" href="lala-dashboard.html">Lala Dashboards</a></li>
+                            <li><a class="dropdown-item" href="lala-Ecommerce.html">Lala Ecommerce</a></li>
+                            <li><a class="dropdown-item" href="lala-invoice.html">Lala Invoice</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="hire us.html">HIRE US
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="carries.html">Careers</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="client.html">Clients</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="banner-container" style="background-image: url('assets/img/bbb.webp');">
+        <div class="container center">
+            <h1 class=" text-white mt-5" style="align-items: center; justify-items: center;" >SOFTWARE TESTING</h1>
+        </div>
+    </div>
+    <div class="jumbotron">
+    <div class="container ">
+        <div class="row justify-content-center">
+            <!-- First Row: Image Centered -->
+            <div class="col-md-8 center-text mt-5">
+              <h2 class="title-with-underline1">Software Testing
+            </h2>
+            <p  class="title-with-underline"></p>
+             
+          </div>
+            
+        </div>
+      
+        <div class="row mt-4 justify-content-center">
+            <!-- Second Row: Heading Centered -->
+           
+            <div class="col-md-8 center-content">
+              <img src="../comapnySite/assets/img/ma.webp" alt="Image" class="img-fluid">
+          </div>
+        </div>
+      
+      
+<div class="container">
+    <div class="row justify-content-center mt-4">
+        <div class="col-md-8 center-content">
+            <p class="center-text">
+                Software testing is a method to check whether the actual software product matches expected requirements and ensure that the software product is defect-free. The main purpose of software testing is to identify errors, gaps, and deviations from the actual requirements.
+            </p>
+        </div>
+    </div>
+</div>
+      </div>
+      <br><br>
+    </div>
+<div class="bg-light">
+    <br><br>
+    <div class="container">
+    
+        <div style="text-align: center;">
+            <h2  class="title-with-underline1">Benefits</h2>
+        </div>
+        <br>
+        <div class="row row-cols-1 row-cols-md-2 mt-2 g-4">
+            <div class="col mt-2 ">
+                
+                    <h4 style="text-align: center;">Customer Satisfaction</h4>
+                    <br>
+                
+                    <p style="text-align: center; font-size: 18px;" >The main objective of software testing is to provide more and more satisfaction to the customer.</p>
+              
+            </div>
+            <div class="col mt-2 ">
+                
+                    <h4 style="text-align: center;">Cost-Effectiveness</h4>
+                    <br>
+                    
+                    <p style="text-align: center;  font-size: 18px;">Testing software helps in saving money in the long term as when the bugs are caught at the initial stages it takes less cost to get fixed.</p>
+               
+            </div>
+            
+            <div class="col">
+                <br>
+              
+                    <h4 style="text-align: center;">Product Quality</h4>
+                    <br>
+                   
+                    <p style="text-align: center; font-size: 18px;">The quality of the product can also be ensured only through testing as it helps in verifying the actual results against expected onces.</p>
+                
+            </div>
+            <div class="col">
+              <br>
+                    <h4 style="text-align: center;">Security</h4>
+                    <br>
+                    
+                    <p style="text-align: center; font-size: 18px;">People usually opt for trusted products and this can be ensured only through testing whether the software is risk-free to use or not.</p>
+                
+            </div>
+        </div>
+    </div> 
+</div>
+    <!-- <section>
+      <div class="jumbotron jumbotron-fluid " style="background-color: rgb(228, 233, 242);">
+          <div class="container">
+             
+              <div class="row justify-content-center align-items-center">
+               
+                  <h2 class="section-title  mt-5 " style="color: #8a8d8b;">SOFTWARE TESTING</h2>
+                  <p class="title-with-underline"></p>
+                
+                  
+                  <div class="col-md-6">
+                      <div class="service-description">
+                          <h4>Introduction</h4>
+                          <p class="">Cloud computing is simply the assignment of a wide array of application to a designated server that is out side your personal computer. This special server is able to hold all your software&hardware and any other applications that are necessary to run your company or business. </p>
+                        <p> 
+                          In the cloud ,companies are able to store vital data access word processors remotly use email services and the like ,complex database application will be also accessed in the cloud.in other words it can be defined as one -stop  shop for all your computing ,needs without having to run heavy application on you computer.
+                          
+                          </p>
+                      </div>
+                  </div>
+                
+                  <div class=" col-off-2 col-md-4">
+                    <img src="../comapnySite/assets/img/p.webp"
+                        
+                          alt="Mobile App Development Image" class="img-thumbnail ">
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section> -->
+   <!-- <div class="container mt-5">
+    <h2 style="text-align: center;">BENEFITS OF CLOUD COMPUTING</h2>
+    <div class="row justify-content-center">
+        <div class="col-md-2 center align-items-center">
+       
+            <ol>
+                <li>Dynamic Scalability</li>
+                <li>Cost Saving</li>
+                <li>Performance Quality</li>
+                <li>Usability</li>
+                <li>Enhanced Collaboration</li>
+                <li>Transparency</li>
+            </ol>
+        </div>
+    </div>
+</div> -->
+    
+<footer class=" text-light paddtop " >
+    <div class="container text-center">
+        <div class="iconsfooter mt-3">
+            
+            <ul class="">
+                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
+                
+            </ul>
+            
+        </div>
+        <div>
+            
+        </div>
+    </div>
+    
+</footer>
+    <div class="follows">
+        <p>Follow Us</p>
+    </div>
+ 
+</body>

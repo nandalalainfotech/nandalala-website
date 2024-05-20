@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en-US" class="css3transitions">
+<head>
+    <meta charset="UTF-8">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <link rel="icon" type="image/svg" href="img/nandalala.svg">
+    <title></title>
+    <!-- All CSS -->
+    <!-- All CSS -->
+    <link rel='stylesheet' href='style.css' type='text/css' media='all' />
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <link href="index.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- Include Font Awesome (if not already included) -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <!-- Bootstrap Icons CDN Link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.18.0/font/bootstrap-icons.css" rel="stylesheet">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        integrity="sha384-DNOHZ68v3ZP5sR2KUYtFyRx6pi6j2k3br+vu4SMVKwlf6R5xg1hVXRN3t8lCAx1v" crossorigin="anonymous">
+</head>
+<style>
+    .banner-container {
+        height: 300px; /* Set desired height for the banner */
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+  .input{
+    height: 10% !important;
+  }
+  .title-with-underline{}
+  .btn-1{
+        width: 15%;
+        height: 25%;
+        /* color: azure; */
+        background-color: rgb(228, 233, 242)
+    }
+  
+    /* Custom CSS for increasing input field size */
+    .form-control-lg {
+        font-size: 1.5rem; /* Increase font size */
+        padding: 1rem 2rem; /* Increase padding */
+        border-radius: 1rem; /* Increase border radius */
+        height: 3.5rem; /* Increase height */
+    }
+    textarea.form-control-lg {
+        min-height: 200px; /* Increase minimum height for textarea */
+    }
+   #emailError {
+            color: red;
+            display: none;
+        }
+        .borcolor:focus {
+        outline: none; /* Remove the blue outline */
+        border-color: #CED4DA; /* Add your desired border color */
+        box-shadow: none; /* Remove any box shadow */
+    }
+ 
+</style>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light  fixed-top" style="background-color: rgb(228, 233, 242)">
+        <div class="container-fluid">
+            <a class="navbar-brand img11" href="#"><img class="img112" src="assets/img/nandalala.svg" alt=""
+                    width="100%"></a>
+            <!-- Navbar Toggler Button -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Navbar Links -->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about_us_2.html">About</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Services
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
+                            <li><a class="dropdown-item" href="services.html">Software Development</a></li>
+                            <li><a class="dropdown-item" href="web-application.html">Web Development</a></li>
+                            <li><a class="dropdown-item" href="mobile-developing.html">Mobile Development</a></li>
+                            <li><a class="dropdown-item" href="develps.html">DevOps Automation</a></li>
+                            <li><a class="dropdown-item" href="cloud.html">Cloud Consulting</a></li>
+                            <li><a class="dropdown-item" href="quanty .html">Quality Assurance</a></li>
+                            <li><a class="dropdown-item" href="others.html">Other Services</a></li>
+                            <li><a class="dropdown-item" href="technology.html">Technology Stack</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="productsDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Products
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="productsDropdown">
+                            <li><a class="dropdown-item" href="lala-erp.html">Lala ERP</a></li>
+                            <li><a class="dropdown-item" href="lala-dashboard.html">Lala Dashboards</a></li>
+                            <li><a class="dropdown-item" href="lala-Ecommerce.html">Lala Ecommerce</a></li>
+                            <li><a class="dropdown-item" href="lala-invoice.html">Lala Invoice</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="hire us.html">HIRE US
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="carries.html">Careers</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="client.html">Clients</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+<br>
+    <div class="bg-light">
+        <div class="container mt-5">
+            <br><br>
+            <div class="row justify-content-center align-items-center">
+                 
+                <h2 class="section-title  mt-5 " style="color:#8a8d8b;">Hire our Developers</h2>
+                <p class="title-with-underline"></p>
+           
+            
+            <br><br><br>
+            <div style="text-align: center;">
+            
+            <h6 style="font-size: 24px; color: black;">Start your dream project</h6><br>
+            
+            <p style="font-size: 18px ; color: #8a8d8b ;">We provide highly experienced developers for your projects</p>
+        </div>
+            <br><br>
+           <div class="row justify-content-center">
+    <div class="col-lg-8">
+        <br><br>
+        <!-- <div style="text-align: center;">
+            <h4>Get in touch</h4>
+        </div> -->
+       <div class="container">
+        <h4 class="text-center mt-4">Get in touch</h4>
+        <form id="contactForm" action="#" method="post">
+            <div class="mb-3">
+                <input type="text" class="form-control borcolor" id="fullName" name="fullName" placeholder="Name" style="height: 50px;">
+            </div>
+            <div class="mb-3">
+                <input type="tel" class="form-control borcolor" id="mobile" name="mobile" pattern="[0-9]{10}" placeholder="Phone" style="height: 50px;">
+            </div>
+            <div class="mb-3">
+                <input type="email" class="form-control borcolor" id="email" name="email" placeholder="Email" required style="height: 50px;">
+                <div class="invalid-feedback" style="display: none;">
+                    Please enter a valid email address.
+                </div>
+            </div>
+            <div class="mb-3">
+                <textarea class="form-control borcolor" id="address" name="address" rows="8" placeholder="Technology & Project Details"></textarea>
+            </div>
+            <div style="text-align: center;">
+                <p style="font-size: smaller;">This site is protected by reCAPTCHA and the Google <span><a style="text-decoration: none; color: black;" href="">Privacy Policy</a></span> and <span><a style="text-decoration: none; color: black;" href="">Terms of Service</a></span> apply.</p>
+                <button type="submit" class="btn btn-1 borcolor" onclick="submitForm()">Submit</button>
+            </div>
+        </form>
+    </div>
+    </div>
+</div>
+        </div>
+        <br><br>
+    </div>
+   
+   
+    <footer class=" text-light paddtop ">
+        <div class="container text-center">
+            <div class="iconsfooter mt-3">
+                <ul class="">
+                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                    <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
+                </ul>
+            </div>
+            <div>
+            </div>
+        </div>
+    </footer>
+    <div class="follows">
+        <p>Follow Us</p>
+    </div>
+    <script>
+      function validateEmail() {
+        const emailInput = document.getElementById('email');
+        const invalidFeedback = emailInput.nextElementSibling;
+        if (emailInput.checkValidity()) {
+            invalidFeedback.style.display = 'none';
+            emailInput.classList.remove('is-invalid');
+            return true;
+        } else {
+            invalidFeedback.style.display = 'block';
+            emailInput.classList.remove('is-valid');
+            return false;
+        }
+    }
+    function submitForm() {
+        if (validateEmail()) {
+            document.getElementById('contactForm').submit();
+        }
+    }
+    document.getElementById('email').addEventListener('input', validateEmail)
+    
+    </script>
+</body>

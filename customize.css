@@ -1,0 +1,42 @@
+section {
+  padding: 20px;
+  width: 1280px;
+  margin: 40px auto;
+}
+
+section ul {
+  display: flex;
+  margin: bottom;
+  color: black;
+}
+
+section ul li {
+  list-style: none;
+  background: #eee;
+  padding: 8px 20px;
+  margin: 5px;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+
+section ul li.active {
+  background: #5e172e;
+  color: #fff;
+  
+}
+
+.product .gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.product .itemBox img {
+  top: 0;
+  left: 0;
+  height: 90%;
+}
+
+.itemBox:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
