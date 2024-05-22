@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta content="IE=edge" http-equiv="X-UA-Compatible">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <link rel="icon" type="image/svg" href="img/nandalala.svg">
+    <link rel="icon" type="image/svg" href="assets/img/nandalala-logo.svg">
     <title></title>
     <!-- All CSS -->
     <!-- All CSS -->
@@ -27,6 +27,13 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
         integrity="sha384-DNOHZ68v3ZP5sR2KUYtFyRx6pi6j2k3br+vu4SMVKwlf6R5xg1hVXRN3t8lCAx1v" crossorigin="anonymous">
+
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js" > </script>
+		<script type="text/javascript">
+		  (function() {
+		  emailjs.init("Xhm8AKNfeBRSMT2uc");
+		  })(); 
+		  </script>
 </head>
 <style>
     .banner-container {
@@ -108,7 +115,7 @@
 <body>
     <nav class="navbar navbar-expand-lg navbar-light  fixed-top" style="background-color: rgb(228, 233, 242)">
         <div class="container-fluid">
-            <a class="navbar-brand img11" href="#"><img class="img112" src="assets/image/nandalala.svg" alt=""
+            <a class="navbar-brand img11" href="#"><img class="img112" src="assets/img/nandalala.svg" alt=""
                     width="100%"></a>
             <!-- Navbar Toggler Button -->
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -132,12 +139,12 @@
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
                             <li><a class="dropdown-item" href="services.html">Software Development</a></li>
-                            <li><a class="dropdown-item" href="web application.html">Web Development</a></li>
-                            <li><a class="dropdown-item" href="mobile application.html">Mobile Development</a></li>
-                            <li><a class="dropdown-item" href="Cloud Consulting.html">DevOps Automation</a></li>
-                            <li><a class="dropdown-item" href="Cloud Consulting.html">Cloud Consulting</a></li>
-                            <li><a class="dropdown-item" href="quanty assurance.html">Quality Assurance</a></li>
-                            <li><a class="dropdown-item" href="otherservices.html">Other Services</a></li>
+                            <li><a class="dropdown-item" href="web-application.html">Web Development</a></li>
+                            <li><a class="dropdown-item" href="mobile-developing.html">Mobile Development</a></li>
+                            <li><a class="dropdown-item" href="develps.html">DevOps Automation</a></li>
+                            <li><a class="dropdown-item" href="cloud.html">Cloud Consulting</a></li>
+                            <li><a class="dropdown-item" href="quanty .html">Quality Assurance</a></li>
+                            <li><a class="dropdown-item" href="others.html">Other Services</a></li>
                             <li><a class="dropdown-item" href="technology.html">Technology Stack</a></li>
                         </ul>
                     </li>
@@ -147,21 +154,21 @@
                             Products
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="productsDropdown">
-                            <li><a class="dropdown-item" href="#">Lala ERP</a></li>
-                            <li><a class="dropdown-item" href="#">Lala Dashboards</a></li>
-                            <li><a class="dropdown-item" href="#">Lala Ecommerce</a></li>
-                            <li><a class="dropdown-item" href="#">Lala Invoice</a></li>
+                            <li><a class="dropdown-item" href="erp.html">Lala ERP</a></li>
+                            <li><a class="dropdown-item" href="dashboard.html">Lala Dashboards</a></li>
+                            <li><a class="dropdown-item" href="ecommerce.html">Lala Ecommerce</a></li>
+                            <li><a class="dropdown-item" href="invoices.html">Lala Invoice</a></li>
                         </ul>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="hire us.html">HIRE US
+                        <a class="nav-link" href="hire-us.html">HIRE US
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="carrer.html">Careers</a>
+                        <a class="nav-link" href="carries.html">Careers</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#clients">Clients</a>
+                        <a class="nav-link" href="client.html">Clients</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="contact.html">Contact Us</a>
@@ -180,85 +187,94 @@
             </div>
             
             <div class="container mt-5">
-                <div class="row">
-                    <div class="col-12 col-md-6">
-                        <form>
-                            <h4>For your business requirements, please drop us a message</h4>
-                            <br>
-                            <div class="mb-3">
-                                <input type="text" class="form-control borcolor" id="name" name="name" placeholder="Name" style="height: 50px;" required>
-                            </div>
-                            <div class="mb-3">
-                                <input type="email" class="form-control borcolor" id="email" name="email" placeholder="Email" style="height: 50px;" required>
-                            </div>
-                            <div class="mb-3">
-                                <input type="tel" class=" form-control borcolor" id="mobile" name="mobile" pattern="[0-9]{10}" placeholder="Mobile Number" style="height: 50px;" required>
-                            </div>
-                            <div class="mb-3">
-                                <textarea class="form-control borcolor" id="message" name="message" rows="8"
-                                    placeholder="Business Requirements" required></textarea>
-                            </div>
+    <div class="row">
+        <div class="col-12 col-md-6">
 
-                                <!-- <input class="form-control" type="file" id="file" name="file"> -->
 
-                                <div class="d-flex justify-content-between">
-                                    <div class="flex-grow-1">
-                                        <div class="d-flex align-items-center">
-                                            <input type="file" id="file" name="file" style="display: none;"> <!-- Hidden input element -->
-                                            <div class="mr-2 attach">
-                                                <label for="file" class="mb-0" style="cursor: pointer;"><i class="bi bi-paperclip"></i></label> <!-- Label with paperclip icon -->
-                                            </div>
-                                            <div>
-                                                <label for="file" class="mb-0 attach" style="cursor: pointer;">Attachment</label> <!-- Label for file attachment -->
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div>
-                                    <div id="attachmentList" class="mb-0 attach attachment-container"></div>
-                                </div>
-                                
-                                <br>
-                                <button type="submit" class="btn smtbutton">SEND</button>
-                                    <br><br>
-                                    <p class="protect">This site is protected by reCAPTCHA and the Google Privacy
-                                        Policy and Terms of Service apply.</p>
-                        </form>
+            <form id="myForm" action="contact-us.php" enctype="multipart/form-data" method="post" >
+                <h4>For your business requirements, please drop us a message</h4>
+                <div class="mb-3">
+                    <input type="text" class="form-control borcolor" id="name" name="name" placeholder="Name" >
+                    <div class="invalid-feedback">
+                        Please fill in this required field.
                     </div>
-                    <div class="col-12 col-md-6">
-                        <div style="margin-left: 20px;">
-                            <h4>Nandalala Infotech</h4>
-                            <br>
-                            <p class="addresss">2/56c, Main Road, Thalakkudi, Near to ARM Engineering Works, Trichy, Tamilnadu,
-                                India - 621216</p>
-                            <span class="addresss">Email: <a href="mailto:info@nandalalainfotech.com">info@nandalalainfotech.com</a></span>
-                            <p class="addresss bp-2">Mobile no: +91 9944850325</p>
-                            <span class="addresss">USA</span>
-                            <span class="addresss">3014 Lake Union Hill Way,</span>
-                            <p class="addresss">Alpharetta, GA 30004, USA.</p><br>
-                            <h4>Working Hours</h4>
-                            <select class="form-select borcolor mb-3 custom-select-width addresss" style="width: auto !important;">
-                                <option selected>Open today - 09:00 am – 06:00 pm</option>
-                                <option>Mon - 09:00 am – 06:00 pm</option>
-                                <option>Tue - 09:00 am – 06:00 pm</option>
-                                <option>Wed - 09:00 am – 06:00 pm</option>
-                                <option>Thu - 09:00 am – 06:00 pm</option>
-                                <option>Fri - 09:00 am – 06:00 pm</option>
-                                <option>Sat - 09:00 am – 06:00 pm</option>
-                                <option>Sun - Closed</option>
-                            </select>
+                </div>
+                <div class="mb-3">
+                    <input type="email" class="form-control borcolor" id="email" name="email" placeholder="Email" >
+                    <div class="invalid-feedback">
+                        Please enter a valid email address.
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <input type="tel" class="form-control borcolor" id="contact" name="mobile" pattern="[0-9]{10}" placeholder="Mobile Number" >
+                    <div class="invalid-feedback">
+                        Please enter a valid phone number.
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <textarea class="form-control borcolor" id="address" name="message" rows="8" placeholder="Business Requirements" ></textarea>
+                    <div class="invalid-feedback">
+                        Please fill in this required field.
+                    </div>
+                </div>
+                <div class="d-flex justify-content-between mb-3">
+                    <div class="flex-grow-1">
+                        <div class="d-flex align-items-center">
+                            <input type="file" id="file" name="file" style="display: none;">
+                            <div class="mr-2 attach">
+                                <label for="file" class="mb-0" style="cursor: pointer;"><i class="bi bi-paperclip"></i></label>
+                            </div>
+                            <div>
+                                <label for="file" class="mb-0 attach" id="fileAttach" style="cursor: pointer;">Attachment</label>
+                            </div>
                         </div>
                     </div>
-                    
                 </div>
+                <div>
+                    <div id="attachmentList" class="mb-0 attach attachment-container"></div>
+                </div>
+                <br>
+                <div style="text-align: center;">
+                    <p style="font-size: smaller;">This site is protected by reCAPTCHA and the Google <span><a style="text-decoration: none; color: black;" href="">Privacy Policy </a></span>  and <span><a style="text-decoration: none; color: black;" href="">Terms of Service</a></span> apply.</p>
+                    
+                <button type="submit" class="btn smtbutton" >SEND</button>
+                </div>
+            </form>
+            
+        </div>
+        <div class="col-12 col-md-6">
+            <div style="margin-left: 20px;">
+                <h4>Nandalala Infotech</h4>
+                <br>
+                <p class="addresss">2/56c, Main Road, Thalakkudi, Near to ARM Engineering Works, Trichy, Tamilnadu, India - 621216</p>
+                <span class="addresss">Email: <a href="mailto:info@nandalalainfotech.com">info@nandalalainfotech.com</a></span>
+                <p class="addresss bp-2">Mobile no: +91 9944850325</p>
+                <span class="addresss">USA</span>
+                <span class="addresss">3014 Lake Union Hill Way,</span>
+                <p class="addresss">Alpharetta, GA 30004, USA.</p><br>
+                <h4>Working Hours</h4>
+                <select class="form-select borcolor mb-3 custom-select-width addresss" >    
+                    <option selected>Open today - 09:00 am – 06:00 pm</option>
+                    <option>Mon - 09:00 am – 06:00 pm</option>
+                    <option>Tue - 09:00 am – 06:00 pm</option>
+                    <option>Wed - 09:00 am – 06:00 pm</option>
+                    <option>Thu - 09:00 am – 06:00 pm</option>
+                    <option>Fri - 09:00 am – 06:00 pm</option>
+                    <option>Sat - 09:00 am – 06:00 pm</option>
+                    <option>Sun - Closed</option>
+                </select>
             </div>
+        </div>
+        
+    </div>
+</div>
         </div><br>
-        <div class="overlay"></div>
+        <div class="overlay">
         <iframe
             src="https://www.gogle.com/maps/embed?pb=!1m14!1m8!1m3!1d7836.370237488036!2d78.7225743!3d10.8735205!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3baaf714073b5677%3A0xd2e440cc851668b8!2sVKJ%20Solutions!5e0!3m2!1sen!2sin!4v1714995629457!5m2!1sen!2sin"
             width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy"
             referrerpolicy="no-referrer-when-downgrade"></iframe>
-
+        </div>
 
 
 
@@ -285,44 +301,130 @@
                 <p>Follow Us</p>
             </div>
 
-            <script>
-                // Get the file input element
-                var fileInput = document.getElementById('file');
 
-// Get the attachment list element
-var attachmentList = document.getElementById('attachmentList');
 
-// Add event listener to the file input to detect changes
-fileInput.addEventListener('change', function () {
-    // Get the selected files
-    var files = fileInput.files;
+           <script>
+          document.getElementById('file').addEventListener('change', function() {
+    var file = this.files[0];
+    var fileAttachLabel = document.getElementById('fileAttach');
+    var attachmentList = document.getElementById('attachmentList');
 
-    // Loop through each selected file
-    for (var i = 0; i < files.length; i++) {
-        // Create a container div for file name and close button
-        var fileContainer = document.createElement('div');
-        fileContainer.className = 'file-container';
+    // Clear previous attachment
+    attachmentList.innerHTML = '';
 
-        // Create a new paragraph element to display the file name
-        var fileParagraph = document.createElement('p');
-        fileParagraph.textContent = files[i].name;
+    if (file) {
+        // Display file name
+        fileAttachLabel.innerHTML = file.name;
+
+        // Create a new list item to display file information
+        var listItem = document.createElement('div');
+        listItem.classList.add('attachment-item');
+
+        // Create a span for file information
+        var fileInfo = document.createElement('span');
+        fileInfo.textContent = 'File Name: ' + file.name + ', Size: ' + (file.size / 1024).toFixed(2) + ' KB';
 
         // Create a close button
         var closeButton = document.createElement('button');
-        closeButton.textContent = '×'; // Close icon
-        closeButton.className = 'close-button';
-        closeButton.onclick = function () {
-            // Remove the corresponding file container when close button is clicked
-            this.parentNode.remove();
+        closeButton.innerHTML = '×';
+        closeButton.classList.add('close-button');
+        closeButton.onclick = function() {
+            listItem.remove(); // Remove the attachment item when close button is clicked
+            fileAttachLabel.innerHTML = 'Attachment'; // Reset attachment label if all attachments are removed
         };
 
-        // Append the file name and close button to the container
-        fileContainer.appendChild(fileParagraph);
-        fileContainer.appendChild(closeButton);
+        // Append file information and close button to the list item
+        listItem.appendChild(fileInfo);
+        listItem.appendChild(closeButton);
 
-        // Append the container to the attachment list
-        attachmentList.appendChild(fileContainer);
+        // Append the list item to the attachment list
+        attachmentList.appendChild(listItem);
+
+        // If the file is an image, display a preview
+        if (file.type && file.type.indexOf('image') !== -1) {
+            var reader = new FileReader();
+            reader.onload = function(e) {
+                var img = document.createElement('img');
+                img.src = e.target.result;
+                img.classList.add('attachment-preview');
+                listItem.appendChild(img);
+            };
+            reader.readAsDataURL(file);
+        }
+    } else {
+        // No file selected, reset attachment label
+        fileAttachLabel.innerHTML = 'Attachment';
     }
 });
-            </script>
+
+           </script>
+
+<script>
+    // Add event listeners to each input field for real-time validation
+    document.addEventListener('DOMContentLoaded', function() {
+        const fields = document.querySelectorAll('.form-control');
+        fields.forEach(field => {
+            field.addEventListener('input', function() {
+                validateField(field);
+            });
+        });
+    });
+    function validateForm() {
+        const form = document.getElementById('myForm');
+        const fields = form.querySelectorAll('.form-control');
+        let formIsValid = true;
+        fields.forEach(field => {
+            validateField(field);
+            if (!field.checkValidity()) {
+                formIsValid = false;
+            }
+        });
+        const fileInput = document.getElementById('file');
+        if (!fileInput.value) {
+            fileInput.nextElementSibling.nextElementSibling.style.display = 'block';
+            formIsValid = false;
+        } else {
+            fileInput.nextElementSibling.nextElementSibling.style.display = 'none';
+        }
+        return formIsValid;
+    }
+    function validateField(field) {
+        const invalidFeedback = field.nextElementSibling;
+        if (field.type === 'email') {
+            if (!validateEmail(field.value)) {
+                invalidFeedback.style.display = 'block';
+                field.classList.add('is-invalid');
+                return;
+            }
+        }
+        if (field.checkValidity()) {
+            invalidFeedback.style.display = 'none';
+            field.classList.remove('is-invalid');
+            field.classList.add('is-valid');
+        } else {
+            invalidFeedback.style.display = 'block';
+            field.classList.add('is-invalid');
+            field.classList.remove('is-valid');
+        }
+    }
+    function validateEmail(email) {
+        const emailPattern = /^[\w-]+(\.[\w-]+)*@\w+(\.\w+)+$/;
+        return emailPattern.test(email);
+    }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 </body>
