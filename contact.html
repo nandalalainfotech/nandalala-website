@@ -53,9 +53,9 @@
       border: none;
       /* Optionally remove border radius as well */
     }
-    .custom-select-width {
-      width: 200px; /* Adjust the width as needed */
-    }
+    /* .custom-select-width {
+      width: 200px; 
+    } */
     /* *******underline code ******* */
     .new-class-name {
     display: inline-block;
@@ -87,7 +87,7 @@
     text-align: center;
 }
 .addresss{
-    font-size: 18px;
+    
     color: rgb(94, 94, 94);
 }
 .borcolor:focus {
@@ -105,11 +105,28 @@
         margin-left: 5px; /* Add some space between file name and close icon */
         margin-bottom: 5px;
     }
+    
 
     /* Container for file name and close button */
     .file-container {
         display: flex;
         align-items: center;
+    }
+
+    #fullName::placeholder {
+        color: #000; /* Change to your desired color */
+    }
+
+    #email::placeholder {
+        color: #000; /* Change to your desired color */
+    }
+
+    #contact::placeholder {
+        color: #000; /* Change to your desired color */
+    }
+
+    #address::placeholder {
+        color: #000; /* Change to your desired color */
     }
 </style>
 <body>
@@ -188,34 +205,26 @@
             
             <div class="container mt-5">
     <div class="row">
-        <div class="col-12 col-md-6">
+        <div class="col-12 col-lg-6">
 
 
-            <form id="myForm" action="contact-us.php" enctype="multipart/form-data" method="post" >
+            <form method="post" action="contact-us.php" id="myForm" novalidate enctype="multipart/form-data" onsubmit="return validateForm()">
                 <h4>For your business requirements, please drop us a message</h4>
                 <div class="mb-3">
-                    <input type="text" class="form-control borcolor" id="name" name="name" placeholder="Name" >
-                    <div class="invalid-feedback">
-                        Please fill in this required field.
-                    </div>
+                    <input type="text" class="form-control borcolor" id="fullName" name="fullName" placeholder="Name" required style="height: 50px;">
+                    <div class="invalid-feedback">Please fill in this required field.</div>
                 </div>
                 <div class="mb-3">
-                    <input type="email" class="form-control borcolor" id="email" name="email" placeholder="Email" >
-                    <div class="invalid-feedback">
-                        Please enter a valid email address.
-                    </div>
+                    <input type="email" class="form-control borcolor" id="email" name="email" placeholder="Email" required style="height: 50px;">
+                    <div class="invalid-feedback">Please enter a valid email address.</div>
                 </div>
                 <div class="mb-3">
-                    <input type="tel" class="form-control borcolor" id="contact" name="mobile" pattern="[0-9]{10}" placeholder="Mobile Number" >
-                    <div class="invalid-feedback">
-                        Please enter a valid phone number.
-                    </div>
+                    <input type="text" class="form-control borcolor" id="contact" name="contact" pattern="[0-9]{10}" placeholder="Mobile Number" required style="height: 50px;">
+                    <div class="invalid-feedback">Please enter a valid phone number.</div>
                 </div>
                 <div class="mb-3">
-                    <textarea class="form-control borcolor" id="address" name="message" rows="8" placeholder="Business Requirements" ></textarea>
-                    <div class="invalid-feedback">
-                        Please fill in this required field.
-                    </div>
+                    <textarea class="form-control borcolor" id="address" name="address" rows="8" placeholder="Business Requirements"  required></textarea>
+                    <div class="invalid-feedback">Please fill in this required field.</div>
                 </div>
                 <div class="d-flex justify-content-between mb-3">
                     <div class="flex-grow-1">
@@ -232,19 +241,21 @@
                 </div>
                 <div>
                     <div id="attachmentList" class="mb-0 attach attachment-container"></div>
+                    <br>
                 </div>
-                <br>
                 <div style="text-align: center;">
-                    <p style="font-size: smaller;">This site is protected by reCAPTCHA and the Google <span><a style="text-decoration: none; color: black;" href="">Privacy Policy </a></span>  and <span><a style="text-decoration: none; color: black;" href="">Terms of Service</a></span> apply.</p>
-                    
-                <button type="submit" class="btn smtbutton" >SEND</button>
+                   
+                    <button type="submit" class="btn smtbutton">SEND</button>
+                    <br><br>
+
+                    <p style="font-size: smaller;">This site is protected by reCAPTCHA and the Google <span><a style="text-decoration: none; color: black;" href="">Privacy Policy</a></span> and <span><a style="text-decoration: none; color: black;" href="">Terms of Service</a></span> apply.</p>
                 </div>
             </form>
             
         </div>
-        <div class="col-12 col-md-6">
+        <div class="col-12 col-lg-6">
             <div style="margin-left: 20px;">
-                <h4>Nandalala Infotech</h4>
+                <h4 class="spaceNan">Nandalala Infotech</h4>
                 <br>
                 <p class="addresss">2/56c, Main Road, Thalakkudi, Near to ARM Engineering Works, Trichy, Tamilnadu, India - 621216</p>
                 <span class="addresss">Email: <a href="mailto:info@nandalalainfotech.com">info@nandalalainfotech.com</a></span>
@@ -276,30 +287,32 @@
             referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
 
-
-
-            <footer class=" text-light paddtop " >
-                <div class="container text-center ">
-                    <div class="iconsfooter ">
-                        
-                        <ul class="">
-                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                            <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
+            <div style="background-color: rgb(228, 233, 242);">
+                <footer class=" text-light paddtop " >
+                    <div class="container text-center ">
+                        <div class="iconsfooter ">
                             
-                        </ul>
-                        
+                            <ul class="">
+                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
+                                
+                            </ul>
+                            
+                        </div>
+                        <div>
+                            
+                        </div>
                     </div>
-                    <div>
-                        
-                    </div>
+                    
+                </footer>
+                <div class="follows pt-3" >
+                    <p>Follow Us</p>
                 </div>
-                
-            </footer>
-            <div class="follows pt-3" >
-                <p>Follow Us</p>
             </div>
+
+            
 
 
 
@@ -393,18 +406,15 @@
         if (field.type === 'email') {
             if (!validateEmail(field.value)) {
                 invalidFeedback.style.display = 'block';
-                field.classList.add('is-invalid');
+                // field.classList.add('is-invalid');
                 return;
             }
         }
         if (field.checkValidity()) {
             invalidFeedback.style.display = 'none';
-            field.classList.remove('is-invalid');
-            field.classList.add('is-valid');
+           
         } else {
             invalidFeedback.style.display = 'block';
-            field.classList.add('is-invalid');
-            field.classList.remove('is-valid');
         }
     }
     function validateEmail(email) {
