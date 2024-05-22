@@ -135,6 +135,9 @@
 	font-weight: 700!important;
 	font-size: 25px;
 }
+.serSpace{
+    padding: 100px 0 0 0;
+}
  /* foooter */
  .iconsfooter {
     display: flex;
@@ -277,7 +280,7 @@
 }
 .jumbotron{
 	background-color: rgb(228, 233, 242);
-	padding: 50px 0 40px 0;
+	
 }
 .ERPfeat{
 	font-size: 60px;
@@ -298,12 +301,12 @@
 .title-with-underline::after {
     content: '';
     display: block;
-    width: 25%;
+    width: 5%;
     height: 2px;
     background-color: rgb(137, 149, 171); /* Custom underline color */
     position: absolute;
     bottom: -30px;
-    left: 40%; /* Adjust to center the line */
+    left: 47%; /* Adjust to center the line */
 }
 .title-with-underline1 {
     display: inline-block;
@@ -312,14 +315,13 @@
 .title-with-underline1::after {
     content: '';
     display: block;
-    width: 25%;
+    width: 5%;
     height: 2px;
     background-color: rgb(137, 149, 171); /* Custom underline color */
     position: absolute;
     bottom: -10px;
-    left: 30%; /* Adjust to center the line */
+    left: 50% !important; /* Adjust to center the line */
 }
-
 
   
   
@@ -365,6 +367,60 @@
 	.Dashboardd{
 		font-size: 22px ;
 	}
+	.btn-1 {
+		width: 52% !important;
+        background-color: rgb(228, 233, 242);
+    }
+	.title-with-underline {
+		display: inline-block;
+		position: relative;
+	}
+	.title-with-underline::after {
+		content: '';
+		display: block;
+		width: 5%;
+		height: 2px;
+		background-color: rgb(137, 149, 171); /* Custom underline color */
+		position: absolute;
+		bottom: -30px;
+		left: 47%; /* Adjust to center the line */
+	}
+	.title-with-underline1 {
+		display: inline-block;
+		position: relative;
+	}
+	.title-with-underline1::after {
+		content: '';
+		display: block;
+		width: 5%;
+		height: 2px;
+		background-color: rgb(137, 149, 171); /* Custom underline color */
+		position: absolute;
+		bottom: -10px;
+		left: 50% !important; /* Adjust to center the line */
+	}
+	.operate{
+        color:rgb(133, 143, 161);
+        text-align: center;
+        font-size: 21px;
+    }
+    .serColor a,
+.serColor .vertical-line {
+    color: rgb(94, 94, 94) !important;
+    font-size: 17px !important;
+}
+.addresss{
+	font-size: 14px !important;
+	width: auto !important;
+}
+.addresss{
+	font-size: auto !important;
+	width: auto !important;
+}
+.spaceNan{
+	padding: 20px 0 0px 0 ;
+	text-align: center;
+}
 }
 @media only screen and (max-width: 769px) {
 	.navbar-nav {
@@ -409,6 +465,38 @@
 	.Dashboardd{
 		font-size: 28px ;
 	}
+	.title-with-underline {
+		display: inline-block;
+		position: relative;
+	}
+	.title-with-underline::after {
+		content: '';
+		display: block;
+		width: 5%;
+		height: 2px;
+		background-color: rgb(137, 149, 171); /* Custom underline color */
+		position: absolute;
+		bottom: -30px;
+		left: 47%; /* Adjust to center the line */
+	}
+	.title-with-underline1 {
+		display: inline-block;
+		position: relative;
+	}
+	.title-with-underline1::after {
+		content: '';
+		display: block;
+		width: 5%;
+		height: 2px;
+		background-color: rgb(137, 149, 171); /* Custom underline color */
+		position: absolute;
+		bottom: -10px;
+		left: 50% !important; /* Adjust to center the line */
+	}
+	.addresss{
+        font-size: auto !important;
+        width: auto !important;
+    }
    
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -427,7 +515,48 @@
 	.carousel-caption p {
 		width: 100%;
 	}
-	
+	.nae {
+        font-size: 20px !important;
+        text-align: center;
+		align-items: center;
+    }
+	.title-with-underline {
+		display: inline-block;
+		position: relative;
+	}
+	.title-with-underline::after {
+		content: '';
+		display: block;
+		width: 5%;
+		height: 2px;
+		background-color: rgb(137, 149, 171); /* Custom underline color */
+		position: absolute;
+		bottom: -30px;
+		left: 47%; /* Adjust to center the line */
+	}
+	.title-with-underline1 {
+		display: inline-block;
+		position: relative;
+	}
+	.title-with-underline1::after {
+		content: '';
+		display: block;
+		width: 5%;
+		height: 2px;
+		background-color: rgb(137, 149, 171); /* Custom underline color */
+		position: absolute;
+		bottom: -10px;
+		left: 50% !important; /* Adjust to center the line */
+	}
+	.img-fluid {
+		width: 120% !important;
+		height: auto;
+	}
+	.addresss{
+        font-size: auto !important;
+        width: auto !important;
+    }
+
 }
 
 @media (min-width: 1451px) and (max-width: 1550px) {
@@ -468,6 +597,15 @@
         color: #fff;
         font-weight: 900;  
     }
+	.nae {
+        font-size: 10px !important;
+        margin-left: 9px !important;
+    }
+	.addresss{
+        font-size: auto !important;
+        width: auto !important;
+    }
+	
 }
 @media (min-width: 1201px) and (max-width: 1450px) {
 	.text-center1{
@@ -505,6 +643,42 @@
         color: #fff;
         font-weight: 900;
         
+    }
+	.nae {
+        font-size: 20px !important;
+        margin-left: 9px !important;
+    }
+	.title-with-underline {
+		display: inline-block;
+		position: relative;
+	}
+	.title-with-underline::after {
+		content: '';
+		display: block;
+		width: 5%;
+		height: 2px;
+		background-color: rgb(137, 149, 171); /* Custom underline color */
+		position: absolute;
+		bottom: -30px;
+		left: 47%; /* Adjust to center the line */
+	}
+	.title-with-underline1 {
+		display: inline-block;
+		position: relative;
+	}
+	.title-with-underline1::after {
+		content: '';
+		display: block;
+		width: 5%;
+		height: 2px;
+		background-color: rgb(137, 149, 171); /* Custom underline color */
+		position: absolute;
+		bottom: -10px;
+		left: 50% !important; /* Adjust to center the line */
+	}
+	.addresss{
+        font-size: auto !important;
+        width: auto !important;
     }
 	
 }
@@ -548,6 +722,46 @@
 	.vertical-line{
 		display: none !important;
 	}
+	.na{
+		font-size: 13.5px !important; 
+	align-items: center;
+	}
+	.btn-1 {
+		width: 42% !important;
+        background-color: rgb(228, 233, 242);
+    }
+	.title-with-underline {
+		display: inline-block;
+		position: relative;
+	}
+	.title-with-underline::after {
+		content: '';
+		display: block;
+		width: 5%;
+		height: 2px;
+		background-color: rgb(137, 149, 171); /* Custom underline color */
+		position: absolute;
+		bottom: -30px;
+		left: 47%; /* Adjust to center the line */
+	}
+	.title-with-underline1 {
+		display: inline-block;
+		position: relative;
+	}
+	.title-with-underline1::after {
+		content: '';
+		display: block;
+		width: 5%;
+		height: 2px;
+		background-color: rgb(137, 149, 171); /* Custom underline color */
+		position: absolute;
+		bottom: -10px;
+		left: 50% !important; /* Adjust to center the line */
+	}
+	.addresss{
+        font-size: auto !important;
+        width: auto !important;
+    }
 }
 @media (min-width: 1550px) and (max-width: 2560px) {
 	.text-center1{
@@ -586,6 +800,46 @@
         font-weight: 900;
         
     }
+	.nae {
+        font-size: 20px !important;
+        margin-left: 9px !important;
+    }
+	p{
+	 font-family: Helvetica, arial, sans-serif !important;
+	 font-weight: 700 !important;
+	}
+	.title-with-underline {
+		display: inline-block;
+		position: relative;
+	}
+	.title-with-underline::after {
+		content: '';
+		display: block;
+		width: 5%;
+		height: 2px;
+		background-color: rgb(137, 149, 171); /* Custom underline color */
+		position: absolute;
+		bottom: -30px;
+		left: 47%; /* Adjust to center the line */
+	}
+	.title-with-underline1 {
+		display: inline-block;
+		position: relative;
+	}
+	.title-with-underline1::after {
+		content: '';
+		display: block;
+		width: 5%;
+		height: 2px;
+		background-color: rgb(137, 149, 171); /* Custom underline color */
+		position: absolute;
+		bottom: -10px;
+		left: 50% !important; /* Adjust to center the line */
+	}
+	.addresss{
+        font-size: auto !important;
+        width: auto !important;
+    }
 }
 @media only screen and (min-width: 1550px) and (max-width: 2550px) {
 	
@@ -620,5 +874,42 @@
         font-size: 38px;
         color: #fff;
         font-weight: 900;  
+    }
+	.title-with-underline {
+		display: inline-block;
+		position: relative;
+	}
+	.title-with-underline::after {
+		content: '';
+		display: block;
+		width: 5%;
+		height: 2px;
+		background-color: rgb(137, 149, 171); /* Custom underline color */
+		position: absolute;
+		bottom: -30px;
+		left: 47%; /* Adjust to center the line */
+	}
+	.title-with-underline1 {
+		display: inline-block;
+		position: relative;
+	}
+	.title-with-underline1::after {
+		content: '';
+		display: block;
+		width: 5%;
+		height: 2px;
+		background-color: rgb(137, 149, 171); /* Custom underline color */
+		position: absolute;
+		bottom: -10px;
+		left: 50% !important; /* Adjust to center the line */
+	}
+	.jumbotron{
+		background-color: rgb(228, 233, 242);
+		height: 100vh !important;
+		
+	}
+	.addresss{
+        font-size: auto !important;
+        width: auto !important;
     }
 }

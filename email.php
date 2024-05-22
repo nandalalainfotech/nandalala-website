@@ -49,8 +49,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $mail->Password = "yuntjikzkpxmhdoj";
 
     // Email recipients
-    $mail->AddAddress("abi876090@gmail.com", "sm");
-    $mail->AddAddress("prabagandhi20@gmail.com");
+ 
+    $mail->AddAddress("info@nandalalainfotech.com");
 
     // Email content
     $mail->isHTML(true);

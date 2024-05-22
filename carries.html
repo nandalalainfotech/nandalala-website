@@ -98,17 +98,27 @@
     <div class="jumbotron">
         <div class="container">
             <br><br>
-            <div style="text-align: center; margin-left: 20px;">
-                <h4 style="font-size: 20px;">Nandalala Infotech recruits freshers from Trichy for the following positions !!</h4>
-            </div>
+            
 
             <div class="row justify-content-center">
                 <div class="col-lg-6">
+                    <h4 style="font-size: 17px; 
+                        font-family: Helvetica, arial, sans-serif !important;
+                        font-weight: 700 !important;
+                       " >Nandalala Infotech recruits freshers from Trichy for the following positions !!</h4>
                     <br>
-                    <p>Position: Developer Trainee - Freshers</p>
-                    <p>Nos: 3</p>
-                    <p>Qualification: B.Sc/MSc(CSC, IT), BCA/MCA, B.E/M.E(CSC, IT)</p>
-                    <p>Or any other relevant qualification</p>
+                    <p style=" font-family: Helvetica, arial, sans-serif !important;
+                    font-weight: 700 !important;
+                   ">Position: Developer Trainee - Freshers</p>
+                    <p style=" font-family: Helvetica, arial, sans-serif !important;
+                    font-weight: 700 !important;
+                   ">Nos: 3</p>
+                    <p style=" font-family: Helvetica, arial, sans-serif !important;
+                    font-weight: 700 !important;
+                   ">Qualification: B.Sc/MSc(CSC, IT), BCA/MCA, B.E/M.E(CSC, IT)</p>
+                    <p style=" font-family: Helvetica, arial, sans-serif !important;
+                    font-weight: 700 !important;
+                   ">Or any other relevant qualification</p>
                     <p>Please fill the below form and send to us !!</p>
                 </div>
             </div>
@@ -154,6 +164,10 @@
                             </div>
                             <div>
                                 <div id="attachmentList" class="mb-0 attach attachment-container"></div>
+                                <br>
+                            </div>
+                            <div>
+                                <div id="attachmentList" class="mb-0 attach attachment-container"></div>
                             </div>
                             <div style="text-align: center;">
                                 <p style="font-size: smaller;">This site is protected by reCAPTCHA and the Google <span><a style="text-decoration: none; color: black;" href="">Privacy Policy</a></span> and <span><a style="text-decoration: none; color: black;" href="">Terms of Service</a></span> apply.</p>
@@ -178,6 +192,7 @@
                 </ul>
             </div>
         </div>
+        <br>
     </footer>
     <div class="follows">
         <p>Follow Us</p>
@@ -249,7 +264,7 @@
             return emailPattern.test(email);
         }
     </script>
-   <script>
+  <script>
     document.getElementById('file').addEventListener('change', function() {
 var file = this.files[0];
 var fileAttachLabel = document.getElementById('fileAttach');
@@ -264,7 +279,7 @@ if (file) {
   listItem.classList.add('attachment-item');
   // Create a span for file information
   var fileInfo = document.createElement('span');
- 
+  fileInfo.textContent = 'File Name: ' + file.name + ', Size: ' + (file.size / 1024).toFixed(2) + ' KB';
   // Create a close button
   var closeButton = document.createElement('button');
   closeButton.innerHTML = '×';
@@ -294,6 +309,7 @@ if (file) {
   fileAttachLabel.innerHTML = 'Attachment';
 }
 });
+     </script>
      </script>
     
 </body>

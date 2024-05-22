@@ -4,9 +4,8 @@
     <meta charset="UTF-8">
     <meta content="IE=edge" http-equiv="X-UA-Compatible">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <link rel="icon" type="image/svg" href="img/nandalala.svg">
-    <title></title>
-    <!-- All CSS -->
+    <link rel="icon" type="image/svg" href="./assets/img/nandalala-logo.svg">
+    <title>Nandalala website</title>
     <!-- All CSS -->
     <link rel='stylesheet' href='style.css' type='text/css' media='all' />
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -27,10 +26,13 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
         integrity="sha384-DNOHZ68v3ZP5sR2KUYtFyRx6pi6j2k3br+vu4SMVKwlf6R5xg1hVXRN3t8lCAx1v" crossorigin="anonymous">
+    <link rel="stylesheet" href="contact.js">
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
 </head>
+
 <style>
     .banner-container {
-        height: 300px; /* Set desired height for the banner */
+        height: 300px;
         background-size: cover;
         background-position: center;
         display: flex;
@@ -38,40 +40,37 @@
         align-items: center;
         text-align: center;
     }
-  .input{
-    height: 10% !important;
-  }
-  .title-with-underline{}
-  .btn-1{
+    .input {
+        height: 10% !important;
+    }
+    .title-with-underline {}
+    .btn-1 {
         width: 15%;
         height: 25%;
-        /* color: azure; */
         background-color: rgb(228, 233, 242)
     }
-  
-    /* Custom CSS for increasing input field size */
     .form-control-lg {
-        font-size: 1.5rem; /* Increase font size */
-        padding: 1rem 2rem; /* Increase padding */
-        border-radius: 1rem; /* Increase border radius */
-        height: 3.5rem; /* Increase height */
+        font-size: 1.5rem;
+        padding: 1rem 2rem;
+        border-radius: 1rem;
+        height: 3.5rem;
     }
     textarea.form-control-lg {
-        min-height: 200px; /* Increase minimum height for textarea */
+        min-height: 200px;
     }
-   #emailError {
-            color: red;
-            display: none;
-        }
-        .borcolor:focus {
-        outline: none; /* Remove the blue outline */
-        border-color: #CED4DA; /* Add your desired border color */
-        box-shadow: none; /* Remove any box shadow */
+    #emailError {
+        color: red;
+        display: none;
     }
- 
+    .borcolor:focus {
+        outline: none;
+        border-color: #CED4DA;
+        box-shadow: none;
+    }
 </style>
+
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light  fixed-top" style="background-color: rgb(228, 233, 242)">
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" style="background-color: rgb(228, 233, 242)">
         <div class="container-fluid">
             <a class="navbar-brand img11" href="#"><img class="img112" src="assets/img/nandalala.svg" alt=""
                     width="100%"></a>
@@ -119,7 +118,7 @@
                         </ul>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="hire us.html">HIRE US
+                        <a class="nav-link" href="hire-us.html">HIRE US
                         </a>
                     </li>
                     <li class="nav-item">
@@ -135,98 +134,116 @@
             </div>
         </div>
     </nav>
-<br>
+    <br>
     <div class="bg-light">
         <div class="container mt-5">
             <br><br>
             <div class="row justify-content-center align-items-center">
-                 
-                <h2 class="section-title  mt-5 " style="color:#8a8d8b;">Hire our Developers</h2>
-                <p class="title-with-underline"></p>
-           
-            
-            <br><br><br>
-            <div style="text-align: center;">
-            
-            <h6 style="font-size: 24px; color: black;">Start your dream project</h6><br>
-            
-            <p style="font-size: 18px ; color: #8a8d8b ;">We provide highly experienced developers for your projects</p>
-        </div>
-            <br><br>
-           <div class="row justify-content-center">
-    <div class="col-lg-8">
-        <br><br>
-        <!-- <div style="text-align: center;">
-            <h4>Get in touch</h4>
-        </div> -->
-       <div class="container">
-        <h4 class="text-center mt-4">Get in touch</h4>
-        <form id="contactForm" action="#" method="post">
-            <div class="mb-3">
-                <input type="text" class="form-control borcolor" id="fullName" name="fullName" placeholder="Name" style="height: 50px;">
-            </div>
-            <div class="mb-3">
-                <input type="tel" class="form-control borcolor" id="mobile" name="mobile" pattern="[0-9]{10}" placeholder="Phone" style="height: 50px;">
-            </div>
-            <div class="mb-3">
-                <input type="email" class="form-control borcolor" id="email" name="email" placeholder="Email" required style="height: 50px;">
-                <div class="invalid-feedback" style="display: none;">
-                    Please enter a valid email address.
+                <h2 class="section-title title-with-underline" style="color:#8a8d8b; text-align: center;">Hire our Developers</h2>
+                <br><br><br>
+                <br><br>
+                <div style="text-align: center;">
+                    <h6 style="font-size: 24px; color: black;">Start your dream project</h6><br>
+                    <p style="font-size: 18px; color: #8a8d8b;">We provide highly experienced developers for your projects</p>
+                </div>
+                <br><br>
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <br><br>
+                        <div class="container">
+                            <h4 class="text-center mt-4">Get in touch</h4>
+                            <form id="contactForm" action="#" method="post" onsubmit="event.preventDefault(); sendEmail();">
+                                <div class="mb-3">
+                                    <input type="text" class="form-control borcolor" id="name" name="fullName" placeholder="Name" style="height: 50px;">
+                                </div>
+                                <div class="mb-3">
+                                    <input type="tel" class="form-control borcolor" id="mobile" name="mobile" pattern="[0-9]{10}" placeholder="Phone" style="height: 50px;">
+                                </div>
+                                <div class="mb-3">
+                                    <input type="email" class="form-control borcolor" id="email" name="email" placeholder="Email" required style="height: 50px;">
+                                    <div class="invalid-feedback" style="display: none;">
+                                        Please enter a valid email address.
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <textarea class="form-control borcolor" id="message" name="message" rows="8" placeholder="Technology & Project Details"></textarea>
+                                </div>
+                                <div style="text-align: center;">
+                                    <p style="font-size: smaller;">This site is protected by reCAPTCHA and the Google <span><a style="text-decoration: none; color: black;" href="">Privacy Policy</a></span> and <span><a style="text-decoration: none; color: black;" href="">Terms of Service</a></span> apply.</p>
+                                    <button type="submit" class="btn btn-1 borcolor">Submit</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="mb-3">
-                <textarea class="form-control borcolor" id="address" name="address" rows="8" placeholder="Technology & Project Details"></textarea>
-            </div>
-            <div style="text-align: center;">
-                <p style="font-size: smaller;">This site is protected by reCAPTCHA and the Google <span><a style="text-decoration: none; color: black;" href="">Privacy Policy</a></span> and <span><a style="text-decoration: none; color: black;" href="">Terms of Service</a></span> apply.</p>
-                <button type="submit" class="btn btn-1 borcolor" onclick="submitForm()">Submit</button>
-            </div>
-        </form>
-    </div>
-    </div>
-</div>
+            <br><br>
         </div>
-        <br><br>
-    </div>
-   
-   
-    <footer class=" text-light paddtop ">
-        <div class="container text-center">
-            <div class="iconsfooter mt-3">
-                <ul class="">
-                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                    <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                    <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
-                </ul>
+        <footer class="text-light paddtop">
+            <div class="container text-center">
+                <div class="iconsfooter mt-3">
+                    <ul class="">
+                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                        <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
+                    </ul>
+                </div>
+                <div>
+                </div>
             </div>
-            <div>
-            </div>
+        </footer>
+        <div class="follows">
+            <p>Follow Us</p>
         </div>
-    </footer>
-    <div class="follows">
-        <p>Follow Us</p>
-    </div>
-    <script>
-      function validateEmail() {
-        const emailInput = document.getElementById('email');
-        const invalidFeedback = emailInput.nextElementSibling;
-        if (emailInput.checkValidity()) {
-            invalidFeedback.style.display = 'none';
-            emailInput.classList.remove('is-invalid');
-            return true;
-        } else {
-            invalidFeedback.style.display = 'block';
-            emailInput.classList.remove('is-valid');
-            return false;
-        }
-    }
-    function submitForm() {
-        if (validateEmail()) {
-            document.getElementById('contactForm').submit();
-        }
-    }
-    document.getElementById('email').addEventListener('input', validateEmail)
-    
-    </script>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js" > </script>
+        <script type="text/javascript">
+          (function() {
+          emailjs.init("Xhm8AKNfeBRSMT2uc");
+          })();
+        
+            function validateEmail() {
+                const emailInput = document.getElementById('email');
+                const invalidFeedback = emailInput.nextElementSibling;
+                if (emailInput.checkValidity()) {
+                    invalidFeedback.style.display = 'none';
+                    emailInput.classList.remove('is-invalid');
+                    return true;
+                } else {
+                    invalidFeedback.style.display = 'block';
+                    emailInput.classList.remove('is-valid');
+                    return false;
+                }
+            }
+
+            document.getElementById('email').addEventListener('input', validateEmail);
+
+            function sendEmail() {
+                if (validateEmail()) {
+                    var userName = document.getElementById("name").value;
+                    var userEmail = document.getElementById("email").value;
+                    var userMobile = document.getElementById("mobile").value;
+                    var userMessage = document.getElementById("message").value;
+
+                    var templateParams = {
+                        name: userName,
+                        email: userEmail,
+                        mobile: userMobile,
+                        message: userMessage
+                    };
+
+                    emailjs.send('service_4iyi0pa', 'template_75toueo', templateParams)
+                        .then(function(response) {
+                            console.log('SUCCESS!', response.status, response.text);
+                            window.alert("Nandalala Infotech !!");
+                            document.getElementById("contactForm").reset();
+                        })
+                        .catch(function(error) {
+                            console.log('FAILED...', error);
+                            window.alert("Failed to send the message.");
+                        });
+                }
+            }
+        </script>
 </body>
+</html>
