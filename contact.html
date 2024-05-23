@@ -35,6 +35,7 @@
 		  })(); 
 		  </script>
 </head>
+
 <style>
     .banner-container {
         height: 300px;
@@ -135,6 +136,12 @@
 .open {
     color: black; /* Change to your desired color */
 }
+    .bold {
+        font-weight: bold;
+    }
+    .open {
+        color: #000; /* Change color as desired */
+    }
 </style>
 <body>
     <nav class="navbar navbar-expand-lg navbar-light  fixed-top" style="background-color: rgb(228, 233, 242)">
@@ -260,19 +267,19 @@
             </form>
             
         </div>
-        <div class="col-12 col-lg-6">
-            <div style="margin-left: 20px;">
+        <div class="col-12 col-lg-6 centUsa">
+            <div style="margin-left: 20px; ">
                 <h4 class="spaceNan">Nandalala Infotech</h4>
                 <br>
                 <p class="addresss">2/56c, Main Road, Thalakkudi, Near to ARM Engineering Works, Trichy, Tamilnadu, India - 621216</p>
                 <span class="addresss">Email: <a href="mailto:info@nandalalainfotech.com">info@nandalalainfotech.com</a></span>
                 <p class="addresss bp-2">Mobile no: +91 9944850325</p>
-                <span class="addresss">USA</span>
+                <div class="addresss ">USA</div>
                 <span class="addresss">3014 Lake Union Hill Way,</span>
                 <p class="addresss">Alpharetta, GA 30004, USA.</p><br>
                 <h4>Working Hours</h4>
-                <select id="opening-hours" class="form-select borcolor mb-3 custom-select-width addresss">Open today - 09:00 am – 06:00 pm
-                    <option value="open-today" selected>Open today - 09:00 am – 06:00 pm</option>
+                <select id="opening-hours" class="form-select borcolor mb-3 custom-select-width addresss">
+                    <option value="open-today" >Open today - 09:00 am – 06:00 pm</option>
                     <option value="mon">Mon - 09:00 am – 06:00 pm</option>
                     <option value="tue">Tue - 09:00 am – 06:00 pm</option>
                     <option value="wed">Wed - 09:00 am – 06:00 pm</option>
@@ -281,7 +288,6 @@
                     <option value="sat">Sat - 09:00 am – 06:00 pm</option>
                     <option value="sun">Sun - Closed</option>
                 </select>
-                
             </div>
         </div>
         
@@ -431,38 +437,31 @@
         const emailPattern = /^[\w-]+(\.[\w-]+)*@\w+(\.\w+)+$/;
         return emailPattern.test(email);
     }
-    document.addEventListener("DOMContentLoaded", function() {
-    var select = document.getElementById("opening-hours");
-    var options = select.getElementsByTagName("option");
     
-    // Show the first option by default
-    options[0].selected = true;
-    
-    // Add event listener to the select element
-    select.addEventListener("change", function() {
-        // Remove the first option
-        select.removeChild(options[0]);
-        
-        // Remove bold class from previously selected option
-        var prevSelected = select.querySelector(".bold");
-        if (prevSelected) {
-            prevSelected.classList.remove("bold");
-        }
-        
-        // Add bold class to the currently selected option
-        var selectedOption = select.options[select.selectedIndex];
-        selectedOption.classList.add("bold");
-        
-    });
-    
-    // Mark the open day bold and with a different color
-    var today = new Date().getDay();
-    options[today].classList.add("bold");
-   
-    // options[today].classList.add("open");
-});
-
 </script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        var select = document.getElementById("opening-hours");
+        var options = select.getElementsByTagName("option");
+        var today = new Date().getDay();
+    
+        // Set default selected option to "Open today - 09:00 am – 06:00 pm"
+        options[0].selected = true;
+    
+        // Mark the open day bold and with a different color when dropdown is opened
+        select.addEventListener('click', function() {
+            // Remove bold and open class from all options
+            for (var i = 0; i < options.length; i++) {
+                options[i].classList.remove("bold");
+                options[i].classList.remove("open");
+            }
+            // Mark the open day bold and with a different color
+            options[today].classList.add("bold");
+            options[today].classList.add("open");
+        });
+    });
+    </script>>
 
 
 
