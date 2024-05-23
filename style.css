@@ -421,6 +421,47 @@
 	padding: 20px 0 0px 0 ;
 	text-align: center;
 }
+.centUsa{
+	text-align: center;
+}
+.title-with-underline11 {
+	display: inline-block;
+	position: relative;
+}
+.title-with-underline11::after {
+	content: '';
+	display: block;
+	width: 15%;
+	height: 2px;
+	background-color: rgb(137, 149, 171); /* Custom underline color */
+	position: absolute;
+	bottom: -10px;
+	left: 45%; /* Adjust to center the line */
+}
+.title-with-underline11 {
+	display: inline-block;
+	position: relative;
+}
+.title-with-underline11::after {
+	content: '';
+	display: block;
+	width: 15%;
+	height: 2px;
+	background-color: rgb(137, 149, 171); /* Custom underline color */
+	position: absolute;
+	bottom: -20px;
+	left: 45% !important; /* Adjust to center the line */
+}
+
+
+
+
+
+
+
+
+
+
 }
 @media only screen and (max-width: 769px) {
 	.navbar-nav {
@@ -497,7 +538,44 @@
         font-size: auto !important;
         width: auto !important;
     }
-   
+	.title-with-underline11 {
+        display: inline-block;
+        position: relative;
+    }
+    .title-with-underline11::after {
+        content: '';
+        display: block;
+        width: 15%;
+        height: 2px;
+        background-color: rgb(137, 149, 171); /* Custom underline color */
+        position: absolute;
+        bottom: -10px;
+        left: 45%; /* Adjust to center the line */
+    }
+    .title-with-underline11 {
+        display: inline-block;
+        position: relative;
+    }
+    .title-with-underline11::after {
+        content: '';
+        display: block;
+        width: 15%;
+        height: 2px;
+        background-color: rgb(137, 149, 171); /* Custom underline color */
+        position: absolute;
+        bottom: -20px;
+        left: 45% !important; /* Adjust to center the line */
+    }
+
+
+
+
+
+
+
+
+
+
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
     .ele{
@@ -556,6 +634,43 @@
         font-size: auto !important;
         width: auto !important;
     }
+	.title-with-underline11 {
+        display: inline-block;
+        position: relative;
+    }
+    .title-with-underline11::after {
+        content: '';
+        display: block;
+        width: 15%;
+        height: 2px;
+        background-color: rgb(137, 149, 171); /* Custom underline color */
+        position: absolute;
+        bottom: -10px;
+        left: 45%; /* Adjust to center the line */
+    }
+    .title-with-underline11 {
+        display: inline-block;
+        position: relative;
+    }
+    .title-with-underline11::after {
+        content: '';
+        display: block;
+        width: 15%;
+        height: 2px;
+        background-color: rgb(137, 149, 171); /* Custom underline color */
+        position: absolute;
+        bottom: -20px;
+        left: 45% !important; /* Adjust to center the line */
+    }
+
+
+
+
+
+
+
+
+
 
 }
 
@@ -605,7 +720,44 @@
         font-size: auto !important;
         width: auto !important;
     }
-	
+	.title-with-underline11 {
+        display: inline-block;
+        position: relative;
+    }
+    .title-with-underline11::after {
+        content: '';
+        display: block;
+        width: 15%;
+        height: 2px;
+        background-color: rgb(137, 149, 171); /* Custom underline color */
+        position: absolute;
+        bottom: -10px;
+        left: 45%; /* Adjust to center the line */
+    }
+    .title-with-underline11 {
+        display: inline-block;
+        position: relative;
+    }
+    .title-with-underline11::after {
+        content: '';
+        display: block;
+        width: 15%;
+        height: 2px;
+        background-color: rgb(137, 149, 171); /* Custom underline color */
+        position: absolute;
+        bottom: -20px;
+        left: 45% !important; /* Adjust to center the line */
+    }
+
+
+
+
+
+
+
+
+
+
 }
 @media (min-width: 1201px) and (max-width: 1450px) {
 	.text-center1{
@@ -680,7 +832,44 @@
         font-size: auto !important;
         width: auto !important;
     }
-	
+	.title-with-underline11 {
+        display: inline-block;
+        position: relative;
+    }
+    .title-with-underline11::after {
+        content: '';
+        display: block;
+        width: 15%;
+        height: 2px;
+        background-color: rgb(137, 149, 171); /* Custom underline color */
+        position: absolute;
+        bottom: -10px;
+        left: 45%; /* Adjust to center the line */
+    }
+    .title-with-underline11 {
+        display: inline-block;
+        position: relative;
+    }
+    .title-with-underline11::after {
+        content: '';
+        display: block;
+        width: 15%;
+        height: 2px;
+        background-color: rgb(137, 149, 171); /* Custom underline color */
+        position: absolute;
+        bottom: -20px;
+        left: 45% !important; /* Adjust to center the line */
+    }
+
+
+
+
+
+
+
+
+
+
 }
 @media (min-width: 981px) and (max-width: 1200px) {
 	.text-center1{
@@ -762,6 +951,44 @@
         font-size: auto !important;
         width: auto !important;
     }
+	.title-with-underline11 {
+        display: inline-block;
+        position: relative;
+    }
+    .title-with-underline11::after {
+        content: '';
+        display: block;
+        width: 15%;
+        height: 2px;
+        background-color: rgb(137, 149, 171); /* Custom underline color */
+        position: absolute;
+        bottom: -10px;
+        left: 45%; /* Adjust to center the line */
+    }
+    .title-with-underline11 {
+        display: inline-block;
+        position: relative;
+    }
+    .title-with-underline11::after {
+        content: '';
+        display: block;
+        width: 15%;
+        height: 2px;
+        background-color: rgb(137, 149, 171); /* Custom underline color */
+        position: absolute;
+        bottom: -20px;
+        left: 45% !important; /* Adjust to center the line */
+    }
+
+
+
+
+
+
+
+
+
+
 }
 @media (min-width: 1550px) and (max-width: 2560px) {
 	.text-center1{
@@ -843,6 +1070,44 @@
 	.larView{
 		margin-top: 70px;
 	}
+	.title-with-underline11 {
+        display: inline-block;
+        position: relative;
+    }
+    .title-with-underline11::after {
+        content: '';
+        display: block;
+        width: 15%;
+        height: 2px;
+        background-color: rgb(137, 149, 171); /* Custom underline color */
+        position: absolute;
+        bottom: -10px;
+        left: 45%; /* Adjust to center the line */
+    }
+    .title-with-underline11 {
+        display: inline-block;
+        position: relative;
+    }
+    .title-with-underline11::after {
+        content: '';
+        display: block;
+        width: 15%;
+        height: 2px;
+        background-color: rgb(137, 149, 171); /* Custom underline color */
+        position: absolute;
+        bottom: -20px;
+        left: 45% !important; /* Adjust to center the line */
+    }
+
+
+
+
+
+
+
+
+
+
 }
 @media only screen and (min-width: 1550px) and (max-width: 2550px) {
 	
@@ -915,5 +1180,43 @@
         font-size: auto !important;
         width: auto !important;
     }
+	.title-with-underline11 {
+        display: inline-block;
+        position: relative;
+    }
+    .title-with-underline11::after {
+        content: '';
+        display: block;
+        width: 15%;
+        height: 2px;
+        background-color: rgb(137, 149, 171); /* Custom underline color */
+        position: absolute;
+        bottom: -10px;
+        left: 45%; /* Adjust to center the line */
+    }
+    .title-with-underline11 {
+        display: inline-block;
+        position: relative;
+    }
+    .title-with-underline11::after {
+        content: '';
+        display: block;
+        width: 15%;
+        height: 2px;
+        background-color: rgb(137, 149, 171); /* Custom underline color */
+        position: absolute;
+        bottom: -20px;
+        left: 45% !important; /* Adjust to center the line */
+    }
+
+
+
+
+
+
+
+
+
+
 	
 }
