@@ -173,8 +173,8 @@
                         <ul class="dropdown-menu" aria-labelledby="productsDropdown">
                             <li><a class="dropdown-item" href="erp.html">Lala ERP</a></li>
                             <li><a class="dropdown-item" href="dashboard.html">Lala Dashboards</a></li>
-                            <li><a class="dropdown-item" href="ecommerce.html">Lala Ecommerce</a></li>
-                            <li><a class="dropdown-item" href="invoices.html">Lala Invoice</a></li>
+                            <li><a class="dropdown-item" href="Ecommerce.html">Lala Ecommerce</a></li>
+                            <li><a class="dropdown-item" href="invoice.html">Lala Invoice</a></li>
                         </ul>
                     </li>
                     <li class="nav-item">
@@ -280,11 +280,13 @@
     </div>
 </div>
         </div><br>
-        <div class="overlay">
-        <iframe
-            src="https://www.gogle.com/maps/embed?pb=!1m14!1m8!1m3!1d7836.370237488036!2d78.7225743!3d10.8735205!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3baaf714073b5677%3A0xd2e440cc851668b8!2sVKJ%20Solutions!5e0!3m2!1sen!2sin!4v1714995629457!5m2!1sen!2sin"
-            width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <div class="row-fluid row-google-map" style="position:relative; height:350px; margin-bottom: 20px;">
+            <div class="overlay"></div>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7836.370237488036!2d78.7160171!3d10.8739132!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3baaf751e5818193%3A0xad1457f588b5abfa!2sNandalala%20Infotech!5e0!3m2!1sen!2sin!4v1714995629457!5m2!1sen!2sin"
+                width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <div class="desc"></div>
         </div>
 
             <div style="background-color: rgb(228, 233, 242);">
@@ -327,7 +329,7 @@
 
     if (file) {
         // Display file name
-        fileAttachLabel.innerHTML = file.name;
+        fileAttachLabel.innerHTML = "Attachment";
 
         // Create a new list item to display file information
         var listItem = document.createElement('div');
