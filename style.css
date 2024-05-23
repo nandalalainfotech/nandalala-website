@@ -804,10 +804,10 @@
         font-size: 20px !important;
         margin-left: 9px !important;
     }
-	p{
+	/* p{
 	 font-family: Helvetica, arial, sans-serif !important;
 	 font-weight: 700 !important;
-	}
+	} */
 	.title-with-underline {
 		display: inline-block;
 		position: relative;
@@ -912,4 +912,5 @@
         font-size: auto !important;
         width: auto !important;
     }
+	
 }
