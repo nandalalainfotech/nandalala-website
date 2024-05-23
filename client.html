@@ -60,12 +60,16 @@
             align-items: center;
             height: 100%;
         }
-    /* .custom-hr {
-    width: 5%;
-    margin-top: 20%;
-    margin-left: 10%;
-   
-} */
+        .footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color:rgb(228, 233, 242);
+    color: white; /* Adjust as per your design */
+    text-align: center;
+    padding: 20px;
+}
 </style>
 <body>
     <nav class="navbar navbar-expand-lg navbar-light  fixed-top" style="background-color: rgb(228, 233, 242)">
@@ -109,14 +113,14 @@
                             Products
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="productsDropdown">
-                            <li><a class="dropdown-item" href="erp.html">Lala ERP</a></li>
-                            <li><a class="dropdown-item" href="dashboard.html">Lala Dashboards</a></li>
-                            <li><a class="dropdown-item" href="Ecommerce.html">Lala Ecommerce</a></li>
-                            <li><a class="dropdown-item" href="invoice.html">Lala Invoice</a></li>
+                            <li><a class="dropdown-item" href="lala-erp.html">Lala ERP</a></li>
+                            <li><a class="dropdown-item" href="lala-dashboard.html">Lala Dashboards</a></li>
+                            <li><a class="dropdown-item" href="lala-Ecommerce.html">Lala Ecommerce</a></li>
+                            <li><a class="dropdown-item" href="lala-invoice.html">Lala Invoice</a></li>
                         </ul>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="hire-us.html">HIRE US
+                        <a class="nav-link" href="hire us.html">HIRE US
                         </a>
                     </li>
                     <li class="nav-item">
@@ -135,30 +139,28 @@
 <br>
 <div class="bg-light">
     <br><br>
-<div class="container ">
+<div class="container client ">
     <br><br>
     <h1 style="text-align: center; font-size: 30px; color:#8a8d8b ;" >Our Clients</h1>
     <br><br>
     <div class="owl-carousel">
-      <div class="item mt-3 "><img src="../comapnySite/assets/img/sergent.webp" alt="Image 1" width="20%"></div>
-      <div class="item mt-3"><img src="../comapnySite/assets/img/3d.webp" alt="Image 2"></div>
-      <div class="item mt-3"><img src="../comapnySite/assets/img/sat.webp" alt="Image 3"></div>
-      <div class="item mt-3"><img src="../comapnySite/assets/img/prime soft.webp" alt="Image 1" width="20%"></div>
-      <div class="item mt-3"><img src="../comapnySite/assets/img/ss bulider.webp" alt="Image 2"></div>
-      <div class="item mt-3"><img src="../comapnySite/assets/img/technorucs.webp" alt="Image 3"></div>
-      <div class="item mt-3"><img src="../comapnySite/assets/img/synthgate.webp" alt="Image 3"></div>
-      <div class="item mt-3"><img src="../comapnySite/assets/img/indie.webp" alt="Image 3"></div>
-      <div class="item mt-3"><img src="../comapnySite/assets/img/sr computers.webp" alt="Image 3"></div>
-      <div class="item mt-3"><img src="../comapnySite/assets/img/system tow securit.webp" alt="Image 3"></div>
-      <div class="item mt-3"><img src="../comapnySite/assets/img/wdi.webp" alt="Image 3"></div>
-      <div class="item mt-3"><img src="../comapnySite/assets/img/mavdero.webp" alt="Image 3"></div>
-    
+      <div class="item mt-3 "><img src="assets/img/sergent.webp" alt="Image 1" width="20%"></div>
+      <div class="item mt-3"><img src="assets/img/3d.webp" alt="Image 2"></div>
+      <div class="item mt-3"><img src="assets/img/sat.webp" alt="Image 3"></div>
+      <div class="item mt-3"><img src="assets/img/prime soft.webp" alt="Image 1" width="20%"></div>
+      <div class="item mt-3"><img src="assets/img/ss bulider.webp" alt="Image 2"></div>
+      <div class="item mt-3"><img src="assets/img/technorucs.webp" alt="Image 3"></div>
+      <div class="item mt-3"><img src="assets/img/synthgate.webp" alt="Image 3"></div>
+      <div class="item mt-3"><img src="assets/img/indie.webp" alt="Image 3"></div>
+      <div class="item mt-3"><img src="assets/img/sr computers.webp" alt="Image 3"></div>
+      <div class="item mt-3"><img src="assets/img/system tow securit.webp" alt="Image 3"></div>
+      <div class="item mt-3"><img src="assets/img/wdi.webp" alt="Image 3"></div>
+      <div class="item mt-3"><img src="assets/img/mavdero.webp" alt="Image 3"></div>
     </div>
-   
   </div>
-  <br><br>
+ <br><br><br>
 </div>
-   <div class="jumbotron ">
+   <div class="footer ">
     <footer class=" text-light paddtop ">
         <div class="container text-center">
             <div class="iconsfooter mt-3">
@@ -174,7 +176,7 @@
         </div>
     </footer>
     <div class="follows">
-        <p>Follow Us</p>
+        <p style="color: #000;">Follow Us</p>
     </div>
 </div>
 <script>
@@ -182,11 +184,10 @@ $(document).ready(function(){
     $(".owl-carousel").owlCarousel({
       loop: true,
       margin: 20,
-     
       autoplay: true,
       responsive:{
         0:{
-          items:2.5
+          items:2
         },
         600:{
           items:3
