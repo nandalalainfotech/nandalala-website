@@ -271,7 +271,7 @@
                 <span class="addresss">3014 Lake Union Hill Way,</span>
                 <p class="addresss">Alpharetta, GA 30004, USA.</p><br>
                 <h4>Working Hours</h4>
-                <select id="opening-hours" class="form-select borcolor mb-3 custom-select-width addresss">
+                <select id="opening-hours" class="form-select borcolor mb-3 custom-select-width addresss">Open today - 09:00 am – 06:00 pm
                     <option value="open-today" selected>Open today - 09:00 am – 06:00 pm</option>
                     <option value="mon">Mon - 09:00 am – 06:00 pm</option>
                     <option value="tue">Tue - 09:00 am – 06:00 pm</option>
@@ -281,6 +281,7 @@
                     <option value="sat">Sat - 09:00 am – 06:00 pm</option>
                     <option value="sun">Sun - Closed</option>
                 </select>
+                
             </div>
         </div>
         
@@ -433,13 +434,34 @@
     document.addEventListener("DOMContentLoaded", function() {
     var select = document.getElementById("opening-hours");
     var options = select.getElementsByTagName("option");
-    var today = new Date().getDay();
-
+    
+    // Show the first option by default
+    options[0].selected = true;
+    
+    // Add event listener to the select element
+    select.addEventListener("change", function() {
+        // Remove the first option
+        select.removeChild(options[0]);
+        
+        // Remove bold class from previously selected option
+        var prevSelected = select.querySelector(".bold");
+        if (prevSelected) {
+            prevSelected.classList.remove("bold");
+        }
+        
+        // Add bold class to the currently selected option
+        var selectedOption = select.options[select.selectedIndex];
+        selectedOption.classList.add("bold");
+        
+    });
+    
     // Mark the open day bold and with a different color
+    var today = new Date().getDay();
     options[today].classList.add("bold");
-    options[today].classList.add("open");
-    options[today].selected = true;
+   
+    // options[today].classList.add("open");
 });
+
 </script>
 
 
