@@ -1098,6 +1098,15 @@
         bottom: -20px;
         left: 45% !important; /* Adjust to center the line */
     }
+	.heightFoot{
+		height: 500px;
+	}
+	.dashheight{
+		height:400px;
+	}
+	.footer{
+		height:689px !important;
+	}
 
 
 
