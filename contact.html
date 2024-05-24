@@ -128,6 +128,13 @@
     #address::placeholder {
         color: #000; /* Change to your desired color */
     }
+    .bold {
+    font-weight: bold;
+}
+
+.open {
+    color: black; /* Change to your desired color */
+}
 </style>
 <body>
     <nav class="navbar navbar-expand-lg navbar-light  fixed-top" style="background-color: rgb(228, 233, 242)">
@@ -264,15 +271,15 @@
                 <span class="addresss">3014 Lake Union Hill Way,</span>
                 <p class="addresss">Alpharetta, GA 30004, USA.</p><br>
                 <h4>Working Hours</h4>
-                <select class="form-select borcolor mb-3 custom-select-width addresss" >    
-                    <option selected>Open today - 09:00 am – 06:00 pm</option>
-                    <option>Mon - 09:00 am – 06:00 pm</option>
-                    <option>Tue - 09:00 am – 06:00 pm</option>
-                    <option>Wed - 09:00 am – 06:00 pm</option>
-                    <option>Thu - 09:00 am – 06:00 pm</option>
-                    <option>Fri - 09:00 am – 06:00 pm</option>
-                    <option>Sat - 09:00 am – 06:00 pm</option>
-                    <option>Sun - Closed</option>
+                <select id="opening-hours" class="form-select borcolor mb-3 custom-select-width addresss">
+                    <option value="open-today" selected>Open today - 09:00 am – 06:00 pm</option>
+                    <option value="mon">Mon - 09:00 am – 06:00 pm</option>
+                    <option value="tue">Tue - 09:00 am – 06:00 pm</option>
+                    <option value="wed">Wed - 09:00 am – 06:00 pm</option>
+                    <option value="thu">Thu - 09:30 am – 06:00 pm</option>
+                    <option value="fri">Fri - 09:00 am – 06:00 pm</option>
+                    <option value="sat">Sat - 09:00 am – 06:00 pm</option>
+                    <option value="sun">Sun - Closed</option>
                 </select>
             </div>
         </div>
@@ -423,6 +430,16 @@
         const emailPattern = /^[\w-]+(\.[\w-]+)*@\w+(\.\w+)+$/;
         return emailPattern.test(email);
     }
+    document.addEventListener("DOMContentLoaded", function() {
+    var select = document.getElementById("opening-hours");
+    var options = select.getElementsByTagName("option");
+    var today = new Date().getDay();
+
+    // Mark the open day bold and with a different color
+    options[today].classList.add("bold");
+    options[today].classList.add("open");
+    options[today].selected = true;
+});
 </script>
 
 
