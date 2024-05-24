@@ -153,7 +153,6 @@
   .iconsfooter ul li {
     margin-right: 10px; 
 	border-radius: 60px;
-	background-color: blue;
   }
   .iconsfooter ul li a i {
     font-size: 12px; /* Adjust the size as needed */
@@ -177,6 +176,7 @@
  }
 .moreColor{
 	background-color: rgb(220, 227, 238) !important;
+	    font-weight: 600 !important;
 }
 
 
@@ -285,6 +285,16 @@
 .ERPfeat{
 	font-size: 60px;
 }
+/* erp carousel height  */
+.higFirst{
+	height: 700px;
+}
+.higSecond{
+	height: 550px;
+}
+.higthird{
+	height: 550px;
+}
 /* Dashboard  */
 .Dashboardd{
 	text-align: center;
@@ -363,6 +373,16 @@
 	.ERPfeat{
 		font-size: 18px;
 	}
+	/* erp carousel height  */
+		.higFirst{
+			height: 340px;
+		}
+		.higSecond{
+			height: 200px;
+		}
+		.higthird{
+			height: 200px;
+		}
 	/* lalaInvoice  */
 	.Dashboardd{
 		font-size: 22px ;
@@ -413,10 +433,10 @@
 	font-size: 14px !important;
 	width: auto !important;
 }
-.addresss{
+/* .addresss{
 	font-size: auto !important;
 	width: auto !important;
-}
+} */
 .spaceNan{
 	padding: 20px 0 0px 0 ;
 	text-align: center;
@@ -702,6 +722,9 @@
 	.beforeTab{
 		display: none;
 	}
+	.spaceLink{
+		margin-left: 2% !important;
+	}
      /* ************about images*******************  */
      .content img {
         width:95rem; /* Set the width of the image to cover the full width of the screen */
@@ -717,7 +740,7 @@
         margin-left: 9px !important;
     }
 	.addresss{
-        font-size: auto !important;
+        font-size: 18px !important;
         width: auto !important;
     }
 	.title-with-underline11 {
@@ -784,6 +807,9 @@
 	}
 	.beforeTab{
 		display: none;
+	}
+	.spaceLink{
+		margin-left: 3% !important;
 	}
     /* ************about images*******************  */
     .content img {
@@ -896,6 +922,9 @@
 	}
 	.beforeTab{
 		display: none;
+	}
+	.spaceLink{
+		margin-left: 3% !important;
 	}
      /* ************about images*******************  */
      .content img {
@@ -1015,6 +1044,9 @@
 	}
 	.beforeTab{
 		display: none;
+	}
+	.spaceLink{
+		margin-left: 3% !important;
 	}
     /* ************about images*******************  */
     .content img {
