@@ -682,7 +682,12 @@
         bottom: -20px;
         left: 45% !important; /* Adjust to center the line */
     }
-
+	.center-image img {
+		width: 200%;
+		  /* Ensure image is responsive */
+		 height: auto; /* Maintain aspect ratio */
+		 display: inline-block; /* Align image as inline-block for centering */
+	 }
 
 
 
@@ -771,6 +776,12 @@
         bottom: -20px;
         left: 45% !important; /* Adjust to center the line */
     }
+	.center-image img {
+		width: 200%;
+		  /* Ensure image is responsive */
+		 height: auto; /* Maintain aspect ratio */
+		 display: inline-block; /* Align image as inline-block for centering */
+	 }
 
 
 
@@ -888,7 +899,13 @@
     }
 
 
-
+.center-image img {
+           width: 200%;
+             /* Ensure image is responsive */
+            height: auto; /* Maintain aspect ratio */
+            display: inline-block; /* Align image as inline-block for centering */
+        }
+		
 
 
 

@@ -225,19 +225,19 @@
             <form method="post" action="contact-us.php" id="myForm" novalidate enctype="multipart/form-data" onsubmit="return validateForm()">
                 <h4>For your business requirements, please drop us a message</h4>
                 <div class="mb-3">
-                    <input type="text" class="form-control borcolor" id="fullName" name="fullName" placeholder="Name" required style="height: 50px;">
+                    <input type="text" class="form-control borcolor" id="fullName" name="fullName" placeholder="Name*" required style="height: 50px;">
                     <div class="invalid-feedback">Please fill in this required field.</div>
                 </div>
                 <div class="mb-3">
-                    <input type="email" class="form-control borcolor" id="email" name="email" placeholder="Email" required style="height: 50px;">
+                    <input type="email" class="form-control borcolor" id="email" name="email" placeholder="Email*" required style="height: 50px;">
                     <div class="invalid-feedback">Please enter a valid email address.</div>
                 </div>
                 <div class="mb-3">
-                    <input type="text" class="form-control borcolor" id="contact" name="contact" pattern="[0-9]{10}" placeholder="Mobile Number" required style="height: 50px;">
+                    <input type="text" class="form-control borcolor" id="contact" name="contact" pattern="[0-9]{10}" placeholder="Mobile Number*" required style="height: 50px;">
                     <div class="invalid-feedback">Please enter a valid phone number.</div>
                 </div>
                 <div class="mb-3">
-                    <textarea class="form-control borcolor" id="address" name="address" rows="8" placeholder="Business Requirements"  required></textarea>
+                    <textarea class="form-control borcolor" id="address" name="address" rows="8" placeholder="Business Requirements*"  required></textarea>
                     <div class="invalid-feedback">Please fill in this required field.</div>
                 </div>
                 <div class="d-flex justify-content-between mb-3">
