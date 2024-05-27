@@ -134,7 +134,7 @@
 	padding-bottom: 80px;
 	font-weight: 700!important;
 	font-size: 25px;
-	color: #000;
+	color: #000 ;
 }
 .serSpace{
     padding: 100px 0 0 0;
@@ -474,7 +474,7 @@
 	left: 45% !important; /* Adjust to center the line */
 }
 	.dropMsg{
-		text-align: center;
+		text-align: center !important;
 	}
 
 
