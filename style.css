@@ -134,6 +134,7 @@
 	padding-bottom: 80px;
 	font-weight: 700!important;
 	font-size: 25px;
+	color: #000;
 }
 .serSpace{
     padding: 100px 0 0 0;
@@ -371,7 +372,7 @@
 
 	/* *******************lala erp****************  */
 	.ERPfeat{
-		font-size: 18px;
+		font-size: 18px !important;
 	}
 	/* erp carousel height  */
 		.higFirst{
@@ -472,7 +473,9 @@
 	bottom: -20px;
 	left: 45% !important; /* Adjust to center the line */
 }
-
+	.dropMsg{
+		text-align: center;
+	}
 
 
 
@@ -1026,7 +1029,7 @@
         left: 45% !important; /* Adjust to center the line */
     }
 
-
+	
 
 
 
@@ -1157,7 +1160,13 @@
 		height:689px !important;
 	}
 
-
+	.Dashboardd {
+		text-align: center;
+		font-size: 35px;
+		font-weight: 900;
+		color: rgb(137, 149, 171);
+		margin-top: 176px;
+	}
 
 
 
