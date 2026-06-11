@@ -1,0 +1,115 @@
+.hero-float {
+    
+  animation: floatUpDown 4s ease-in-out infinite;
+}
+
+@keyframes floatUpDown {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+/* mobile service */
+/* why choose us */
+.feature-box {
+  padding: 20px ;
+  border-radius: 12px;
+  border-bottom: 1px solid transparent;
+  transition: all 0.3s ease;
+  
+}
+
+.feature-box:hover {
+  background-color: #ffffff;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+
+  border: 1px solid #2563eb;
+ 
+  
+}
+
+.feature-box .icon {
+  font-size: 28px;
+  color: #2563eb;
+  margin-bottom: 10px;
+  display: inline-block;
+}
+
+.feature-box h5 {
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.feature-box p {
+  font-size: 15px;
+  color: #6b7280;
+  line-height: 1.6;
+}
+ /* how to approach us */
+ .step-wrapper {
+  position: relative;
+  
+ }
+ @media screen and (min-width:767px){
+  .step-wrapper {
+  position: relative;
+display: flex;
+align-items: stretch;
+ }
+}
+
+.container h2{
+  color: #28337c !important;
+}
+
+.step-box {
+  padding: 20px;
+  border-radius: 16px;
+  transition: all 0.3s ease;
+}
+
+/* .step-box:hover {
+  background-color: #ffffff;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+  transform: translateY(-6px);
+} */
+
+/* Circle */
+.step-circle {
+  width: 70px;
+  height: 70px;
+  margin: 0 auto 15px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #2563eb, #3b82f6);
+  color: #fff;
+  font-size: 22px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* . */
+
+/* Text */
+.step-box p {
+  font-size: 15px;
+  color: #6b7280;
+  margin-bottom: 0;
+  line-height: 1.6;
+}
+
+/* Arrow */
+.step-arrow {
+  position: absolute;
+  top: 35%;
+  right: -15px;
+  font-size: 28px;
+  color: #94a3b8;
+}
