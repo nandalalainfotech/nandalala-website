@@ -38,38 +38,46 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 
     // PHPMailer setup
-    $mail = new PHPMailer();
-    $mail->IsSMTP();  
-    $mail->SMTPDebug = 0;
-    $mail->Mailer = "smtp";
-    $mail->Host = "smtp.gmail.com";
-    $mail->Port = 587;
-    $mail->SMTPAuth = true; 
-    $mail->Username = "noreply.nandalalainfotech@gmail.com";
-    $mail->Password = "yuntjikzkpxmhdoj";
+    // PHPMailer setup
+$mail = new PHPMailer(true);
 
-    // Email recipients
- 
-    $mail->AddAddress("info@nandalalainfotech.com");
+$mail->isSMTP();
+$mail->Host       = "smtp.gmail.com";
+$mail->SMTPAuth   = true;
+$mail->Username   = "noreply.nandalalainfotech@gmail.com";
+$mail->Password   = "aweanhgnmiqviobh"; 
+$mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
+$mail->Port       = 587;
 
-    // Email content
-    $mail->isHTML(true);
-    $mail->Subject = 'New Application Received';
-    $mail->Body    = '<h1>Application Details</h1>' .
-                     '<p><strong>Name:</strong> ' . $name . '</p>' .
-                     '<p><strong>Email:</strong> ' . $email . '</p>' .
-                     '<p><strong>Contact:</strong> ' . $contact . '</p>' .
-                     '<p><strong>Address:</strong> ' . $address . '</p>';
+
+$mail->addAddress("hr@nandalalainfotech.com");
+
+// Email content
+$mail->isHTML(true);
+$mail->Subject = "New Application Received";
+$mail->Body    = "
+<h2>Application Details</h2>
+<p><strong>Name:</strong> $name</p>
+<p><strong>Email:</strong> $email</p>
+<p><strong>Contact:</strong> $contact</p>
+<p><strong>Address:</strong> $address</p>
+";
+
 
     if ($fileAttached) {
         $mail->addAttachment($dest_path, $fileName);
     }
 
     // Send email
-    if(!$mail->Send()) {
-        echo 'Message was not sent.';
-        echo 'Mailer error: ' . $mail->ErrorInfo;
-    } else {
-        echo 'Message has been sent.';
-    }
+    // if(!$mail->Send()) {
+    //     echo 'Message was not sent.';
+    //     echo 'Mailer error: ' . $mail->ErrorInfo;
+    // } else {
+    //     echo 'Message has been sent.';
+    // }
+    if($mail->send()){
+    echo "success";
+}else{
+    echo "failed";
+}
 }
